@@ -16,11 +16,7 @@ final class ShipmentTypeExtension extends AbstractTypeExtension
      */
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
-        $builder->add('pickupPointId', HiddenType::class, [
-            'attr' => [
-                'class' => 'pickup-point-id',
-            ],
-        ]);
+        $builder->add('pickupPointId', HiddenType::class);
     }
 
     /**
